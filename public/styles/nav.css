@@ -1,0 +1,22 @@
+.navLeft {
+  display: flex;
+  justify-content: space-between ;
+  font-family: 'Bungee', sans-serif;
+  color: white;
+  background-color: #4056A1;
+  max-width: 1000px;
+  height: 120px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;  
+  padding-top: 1.5em;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  font-family: 'Source Sans Pro', sans-serif; ;
+  font-size: 16px;
+  
+}
