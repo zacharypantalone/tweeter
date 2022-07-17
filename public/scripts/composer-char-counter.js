@@ -15,6 +15,5 @@ $(document).ready(function() {
     } else {
       counter.css("color", "#545149");
     }
-
   });
 });

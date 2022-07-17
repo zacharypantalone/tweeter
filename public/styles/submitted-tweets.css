@@ -22,14 +22,11 @@
   justify-content: flex-start;
   padding-left: 1px;
   align-items: center;
-  
 }
 
 .name-and-user-img h5:last-child {
   margin-left: auto;
 }
-
-
 
 .tweet-text {
   font-size: 13px;
