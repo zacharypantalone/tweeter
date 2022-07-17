@@ -1,0 +1,65 @@
+.tweets {
+  display: flex;
+  width: 80%;
+  border: 2px solid black;
+  margin: 45px;
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.tweets:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+  
+.tweet-content {
+  margin: 9px 9px 0px 9px;
+  width: 97%;
+  
+}
+
+.name-and-user-img {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1px;
+  align-items: center;
+  
+}
+
+.name-and-user-img h5:last-child {
+  margin-left: auto;
+}
+
+
+
+.tweet-text {
+  font-size: 13px;
+  padding-left: 9px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+
+.tweet-text > p {
+  margin-bottom: 2px;
+}
+
+.time-stamp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 10px;
+}
+
+.user-img {
+  height: 40px;
+  width: 40px;
+}
+  
+  
+  
+  
+
+
+
+  
