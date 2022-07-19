@@ -25,7 +25,7 @@ const createTweetElement = (tweetData) => {
           <div class="name-and-user-img">
             <img class="user-img" src="${tweetData.user.avatars}">
           <h3>${tweetData.user.name}</h3>
-          <h5 style="opacity: .5 ;">${tweetData.user.handle}</h5>  
+          <h5>${tweetData.user.handle}</h5>  
         </div>
         <div class="tweet-text">
           <p>${escape(tweetData.content.text)}</p>
