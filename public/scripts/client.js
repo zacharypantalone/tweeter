@@ -61,7 +61,7 @@ const renderTweets = function (tweets) {
   }
 };
 
-const onSubmit = async function (event) {
+const onSubmit = async function(event) {
   event.preventDefault();
   const form = $(this);
   const data = form.serialize();
@@ -84,7 +84,10 @@ const onSubmit = async function (event) {
     
     const data = await loadTweets();
     renderTweets(data);
+    this.reset();
   });
+
+  
 };
 
   
