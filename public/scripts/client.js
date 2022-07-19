@@ -12,6 +12,12 @@ $(document).ready(async function () {
   renderTweets(data);
 });
 
+const escape = function(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = (tweetData) => {
   const ago = timeago.format(tweetData.created_at);
   const tweetHtml = `<article class="tweet">
@@ -22,7 +28,7 @@ const createTweetElement = (tweetData) => {
           <h5 style="opacity: .5 ;">${tweetData.user.handle}</h5>  
         </div>
         <div class="tweet-text">
-          <p>${tweetData.content.text}</p>
+          <p>${escape(tweetData.content.text)}</p>
         </div>
       </div>
       <footer class="time-stamp">
@@ -48,7 +54,7 @@ const loadTweets = async function () {
 };
 
 const renderTweets = function (tweets) {
-  console.log("this is it", tweets);
+  
   for (let tweet of tweets) {
     const text = createTweetElement(tweet);
     $("#tweets-container").append(text);
@@ -59,18 +65,28 @@ const onSubmit = async function (event) {
   event.preventDefault();
   const form = $(this);
   const data = form.serialize();
-  console.log(data);
-  
-  if (data.length <= 5) {
-    return alert("You must type something!");
 
-  } else if (data.length > 145) {
-    return alert("Whoops... too many characters!");
+  if (data.length <= 5 ) {
+    return $('#error').slideDown();
+  } else {
+    $('#error').slideUp();
+  }
+  
+  if (data.length > 145) {
+    return $('#errorTwo').slideDown();
+  } else {
+    $('#errorTwo').slideUp();
   }
 
+  
+
   $.post("/tweets", data).then(async () => {
-    console.log("complete");
+    
     const data = await loadTweets();
     renderTweets(data);
   });
 };
+
+  
+  
+  
