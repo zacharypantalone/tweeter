@@ -45,6 +45,7 @@
 
 .tweet-text > p {
   margin-bottom: 2px;
+  overflow-wrap: break-word;
 }
 
 .time-stamp {
@@ -54,6 +55,8 @@
   padding-left: 16px;
   padding-right: 16px;
   font-size: 10px;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 .user-img {

@@ -66,7 +66,7 @@ const onSubmit = async function(event) {
   const form = $(this);
   const data = form.serialize();
 
-  if (data.length <= 5 ) {
+  if (data.length <= 5) {
     return $('#error').slideDown();
   } else {
     $('#error').slideUp();
