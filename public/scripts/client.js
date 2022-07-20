@@ -67,16 +67,18 @@ const onSubmit = async function(event) {
   const data = form.serialize();
 
   if (data.length <= 5) {
-    return $('#error').slideDown();
-  } else {
-    $('#error').slideUp();
+    $('#error').slideDown();
+    setTimeout(() => $('#error').slideUp(), 3000);
+    return;
   }
+    
   
   if (data.length > 145) {
-    return $('#errorTwo').slideDown();
-  } else {
-    $('#errorTwo').slideUp();
+    $('#errorTwo').slideDown();
+    setTimeout(() => $('#errorTwo').slideUp(), 3000);
+    return;
   }
+
 
   
 
