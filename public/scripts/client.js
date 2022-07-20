@@ -54,7 +54,7 @@ const loadTweets = async function () {
 };
 
 const renderTweets = function (tweets) {
-  
+  $("#tweets-container").html(' ');
   for (let tweet of tweets) {
     const text = createTweetElement(tweet);
     $("#tweets-container").append(text);
