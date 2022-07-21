@@ -34,9 +34,9 @@ const createTweetElement = (tweetData) => {
       <footer class="time-stamp">
       <span>${ago}</span>
         <div class="bottom-right-buttons">
-          <i class="fa-solid fa-flag" onMouseOver="this.style.color='rgb(250, 128, 114)'" onMouseOut="this.style.color='rgb(78, 81, 83)'"></i>
-          <i class="fa-solid fa-retweet" onMouseOver="this.style.color='rgb(250, 128, 114)'" onMouseOut="this.style.color='rgb(78, 81, 83)'"></i>
-          <i class="fa-solid fa-heart" onMouseOver="this.style.color='rgb(250, 128, 114)'" onMouseOut="this.style.color='rgb(78, 81, 83)'"></i>
+          <i class="fa-solid fa-flag" onMouseOver="this.style.color='rgb(31, 193, 27)'" onMouseOut="this.style.color='rgb(78, 81, 83)'"></i>
+          <i class="fa-solid fa-retweet" onMouseOver="this.style.color='rgb(255, 217, 19)'" onMouseOut="this.style.color='rgb(78, 81, 83)'"></i>
+          <i class="fa-solid fa-heart" onMouseOver="this.style.color='rgb(255, 85, 85)'" onMouseOut="this.style.color='rgb(78, 81, 83)'"></i>
         </div>
       </footer>  
       </article>`;

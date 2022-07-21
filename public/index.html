@@ -33,17 +33,18 @@
     <!-- Top nav bar (fixed) -->
   <div class="nav">
     <nav class="navLeft">
-      <span>tweeter</span>
+      <span class="tweeter-logo-text">tweeter</span>
+      <img id="logo" src="/images/bird.png">
       <div class="navRight">
-        <span><strong>Write</strong> a new tweet</span>
-        <i class="fa-solid fa-angles-down" style="color: rgb(226, 19, 19); font-size: 12px"></i>
+        <span class="write-a-new-tweet"><strong>Write</strong> a new tweet</span>
+        <i class="fa-solid fa-angles-down" style="color: rgb(0, 0, 0); font-size: 12px"></i>
       </div>
     </nav>
   </div>
     <!--THIS HEADER IS HARD CODED FOR DESIGN PURPOSES-->
     <header class="header">
       <div class="avatar">
-          <img class="img-profile" src="/images/profile-hex.png">
+          <img class="img-profile" src="/images/man.png">
           <h2 style="margin-top: 0px;"><strong>Zachary</strong> Pantalone</h2> 
       </div>
       <br>
@@ -57,7 +58,7 @@
       <form class="form-inline" action="/tweets" method="POST">
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         <div class="tweetButton-counter">
-          <button class="actual-button" type="submit" onMouseOver="this.style.color='rgb(250, 128, 114)'" onMouseOut="this.style.color='white'">Tweet</button>
+          <button class="actual-button" type="submit" onMouseOver="this.style.color='#FCBCB8'" onMouseOut="this.style.color='white'">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>

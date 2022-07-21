@@ -1,24 +1,37 @@
 .navLeft {
   display: flex;
-  justify-content: space-between ;
+  
   font-family: 'Bungee', sans-serif;
-  color: white;
-  background-color: #4056A1;
+  color: rgb(237 237 237);
+  /* background-color: #FCBCB8; */
+  background-color: #EFA7A7;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   max-width: 100%;
-  height: 120px;
+  height: 116px;
   padding-left: 1.5em;
   padding-right: 1.5em;  
   padding-top: 1.5em;
   z-index: auto;
 }
 
+.navLeft .write-a-new-tweet:last-child {
+  margin-left: auto;
+}
+
+
+
 .navRight {
   display: flex;
+  margin-left: auto;
   align-items: center;
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif; ;
   font-size: 16px;
 }
+
+
+
+
 
 .nav {
   position: fixed; /* Set the navbar to fixed position */
@@ -26,6 +39,24 @@
   width: 100%; /* Full width */
 }
 
+#logo {
+  margin-top: 9px;
+  width: 36px;
+  height: 36px;
+  
+}
 
+.tweeter-logo-text {
+  font-size: 36px;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke: 1px;
+}
+
+.write-a-new-tweet {
+  font-size: 22px;
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+             -webkit-font-smoothing: antialiased;
+}
   
   
