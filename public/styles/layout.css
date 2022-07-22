@@ -34,18 +34,12 @@ body {
   font-size: 18px;
 }
 
+
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
+  
   .desktop {
     display: flex;
     flex-direction: row;
   }
-
-  .header {
-
-  }
-
-
-
-
 }

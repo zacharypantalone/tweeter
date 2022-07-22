@@ -13,16 +13,13 @@
   width: 90%;
 }
 
-
-
 .tweet:hover {
   box-shadow: #96d1f3 0px 0px 0px 2px inset, rgb(237, 237, 237) 10px -10px 0px -3px, rgb(159, 232, 158) 10px -10px, rgb(237, 237, 237) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(237, 237, 237) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(237, 237, 237) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
-  
+
 .tweet-content {
   margin: 9px 9px 0px 9px;
   width: 97%;
-  
 }
 
 .name-and-user-img {
@@ -31,11 +28,11 @@
   padding-left: 1px;
   align-items: center;
 }
-
+  
 .name-and-user-img h5:last-child {
   margin-left: auto;
 }
-
+  
 .tweet-text {
   font-size: 13px;
   padding-left: 9px;
@@ -62,14 +59,4 @@
 .user-img {
   height: 40px;
   width: 40px;
-}
-
-
-  
-  
-  
-  
-
-
-
-  
+}  

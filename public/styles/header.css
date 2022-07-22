@@ -9,7 +9,6 @@
 
 }
 
-
 .avatar {
   display: flex;
   justify-content: flex-end;
@@ -22,7 +21,8 @@
   height: 200px;
   width: 200px;
 }
-  
+
+/* Desktop styles */  
 @media only screen and (min-width: 1024px) {
   
   .header {
@@ -31,12 +31,5 @@
     top: 200px;
     position: sticky;
     margin-left: 60px;
-    
   }
-
-
 }
-  
-  
-  
-

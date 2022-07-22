@@ -1,9 +1,7 @@
 .navLeft {
   display: flex;
-  
   font-family: 'Bungee', sans-serif;
   color: rgb(237 237 237);
-  /* background-color: #FCBCB8; */
   background-color: #EFA7A7;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   max-width: 100%;
@@ -13,12 +11,10 @@
   padding-top: 1.5em;
   z-index: auto;
 }
-
+  
 .navLeft .write-a-new-tweet:last-child {
   margin-left: auto;
 }
-
-
 
 .navRight {
   display: flex;
@@ -28,10 +24,6 @@
   font-family: 'Source Sans Pro', sans-serif; ;
   font-size: 16px;
 }
-
-
-
-
 
 .nav {
   position: fixed; /* Set the navbar to fixed position */
@@ -43,7 +35,6 @@
   margin-top: 9px;
   width: 36px;
   height: 36px;
-  
 }
 
 .tweeter-logo-text {
@@ -58,5 +49,3 @@
              #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
              -webkit-font-smoothing: antialiased;
 }
-  
-  
