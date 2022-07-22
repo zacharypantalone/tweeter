@@ -9,6 +9,7 @@
 
 }
 
+
 .avatar {
   display: flex;
   justify-content: flex-end;
@@ -22,6 +23,19 @@
   width: 200px;
 }
   
+@media only screen and (min-width: 1024px) {
+  
+  .header {
+    width: 400px;
+    height: 300px;
+    top: 200px;
+    position: sticky;
+    margin-left: 60px;
+    
+  }
+
+
+}
   
   
   

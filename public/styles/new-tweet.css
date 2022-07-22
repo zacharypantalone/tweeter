@@ -45,3 +45,14 @@
   border: none;
   color: white;
 }
+
+@media only screen and (min-width: 1024px) {
+  
+  .container {
+    margin-top: 300px;
+    align-items: center;
+    width: 60%;
+  }
+
+
+}
