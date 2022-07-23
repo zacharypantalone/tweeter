@@ -46,6 +46,10 @@
   color: white;
 }
 
+.form-inline {
+  width: 86%;
+}
+
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
   
