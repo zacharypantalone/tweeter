@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready(async function () {
+$(document).ready(async function() {
   $(".form-inline").on("submit", onSubmit);
 
   const data = await loadTweets();
@@ -43,7 +43,7 @@ const createTweetElement = (tweetData) => {
   return tweetHtml;
 };
 
-const loadTweets = async function () {
+const loadTweets = async function() {
   let tweets = [];
   await $.get("/tweets").then((array) => {
     console.log(array);
@@ -53,7 +53,7 @@ const loadTweets = async function () {
   return tweets;
 };
 
-const renderTweets = function (tweets) {
+const renderTweets = function(tweets) {
   $("#tweets-container").html(' ');
   for (let tweet of tweets) {
     const text = createTweetElement(tweet);
@@ -72,26 +72,16 @@ const onSubmit = async function(event) {
     return;
   }
     
-  
   if (data.length > 145) {
     $('#errorTwo').slideDown();
     setTimeout(() => $('#errorTwo').slideUp(), 3000);
     return;
   }
-
-
   
-
-  $.post("/tweets", data).then(async () => {
+  $.post("/tweets", data).then(async() => {
     
     const data = await loadTweets();
     renderTweets(data);
     this.reset();
   });
-
-  
 };
-
-  
-  
-  
