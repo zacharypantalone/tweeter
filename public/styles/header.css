@@ -26,10 +26,16 @@
 @media only screen and (min-width: 1024px) {
   
   .header {
-    width: 400px;
+    width: 300px;
     height: 300px;
-    top: 200px;
+    border-radius: 50%;
+    top: 198px;
     position: sticky;
+    font-size: 13px;
     margin-left: 60px;
+    -webkit-box-shadow: 10px 10px 0px -4px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 0px -4px rgba(0,0,0,1);
+    box-shadow: 11px 6px 0px -4px rgba(0,0,0,1);
+    padding-bottom: 7px;
   }
 }
